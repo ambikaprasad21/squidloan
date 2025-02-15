@@ -1,0 +1,100 @@
+/*
+
+#F461A0  --> light pink 
+#06EBC1 -->
+
+*/
+
+@import "tailwindcss";
+
+:root {
+  --primary-color: #ff459b;
+  --primary-color-01: #eb368a;
+  --blue-color: #00ecff;
+  --blue-color-01: #03d9e9;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(
+    116.82deg,
+    rgba(119, 98, 157, 1) 0%,
+    rgba(13, 11, 31, 1) 34.99999940395355%,
+    rgba(13, 11, 31, 1) 62.5%,
+    rgba(119, 98, 157, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+  font-family: "Exo 2", serif;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  animation: slideDown 0.3s ease-in-out;
+}
+
+.modal-content h3 {
+  font-size: 2rem;
+}
+
+.modal-buttons {
+  margin-top: 15px;
+}
+
+.modal-buttons button {
+  margin: 5px;
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.modal-buttons button:first-child {
+  background: #00bfff;
+  color: white;
+}
+
+.modal-buttons button:last-child {
+  background: #ccc;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,45 @@
+.header {
+  padding: 1.6rem 1.6rem;
+  border-radius: 1rem;
+  margin: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  /* border: 1px solid rgba(255, 255, 255, 0.3); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  /* width: 10rem; */
+}
+
+.logo img {
+  /* width: 100%; */
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.6rem;
+}
+
+.links {
+  display: flex;
+  color: white;
+  align-items: center;
+  gap: 2rem;
+}
+
+.btn {
+  font-size: 1.6rem;
+  padding: 5px 1rem;
+  background-color: var(--primary-color);
+  border-radius: 1rem;
+  border: none;
+  color: white;
+  cursor: pointer;
+}

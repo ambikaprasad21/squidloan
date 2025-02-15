@@ -1,0 +1,100 @@
+.container {
+  margin: 2rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.container h1 {
+  text-align: center;
+  font-size: 5rem;
+  background: linear-gradient(#ff459b, #2ff0ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section {
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(54px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.6rem 3.8rem;
+}
+
+.content {
+}
+
+.content h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--blue-color);
+  margin-bottom: 2rem;
+}
+
+.content h2 span {
+  color: var(--primary-color);
+}
+
+.btn_icon {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.fileInput {
+  display: none; /* Hide the actual file input */
+}
+
+.btn {
+  padding: 1.2rem 1.8rem;
+  background-color: black;
+  color: white;
+  border: 2px solid transparent;
+  border-image-source: linear-gradient(45deg, #ff7eb3, #8854ff);
+  border-image-slice: 1;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.up_icon {
+  background-color: var(--blue-color);
+  padding: 1rem 1.6rem;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.cre_si {
+  width: 55rem;
+}
+
+.cre_si img {
+  width: 100%;
+}
+
+.bg_blur {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 800px;
+  height: 800px;
+  border-radius: 50% 22% 40% 80%;
+  filter: blur(100px);
+  background: radial-gradient(circle at 50% 50%, #ff459b, rgba(76, 0, 255, 0));
+  opacity: 0.2;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

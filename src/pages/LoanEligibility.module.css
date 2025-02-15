@@ -1,0 +1,159 @@
+.container {
+  padding: 5rem 5rem;
+}
+
+.loan_amount {
+  padding: 2rem 3rem;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 3rem;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(54px);
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.g_u {
+  /* max-width: 50rem; */
+  width: 60%;
+}
+
+.g_u p {
+  font-size: 3rem;
+  color: white;
+}
+
+.e_l {
+  color: var(--blue-color);
+}
+
+.g_u button {
+  margin-top: 4rem;
+  background-color: var(--blue-color);
+  border-radius: 1rem;
+  border: none;
+  padding: 1rem 1.6rem;
+  cursor: pointer;
+}
+
+.g_u button:hover {
+  background-color: var(--blue-color-01);
+}
+
+.loan_amt {
+  padding: 2rem 2.8rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.8rem;
+  border: 1px solid white;
+  width: 40%;
+}
+
+.l_t {
+  color: var(--blue-color);
+  font-size: 1.6rem;
+}
+
+.amt {
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.upload {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.upload h1 {
+  font-size: 3rem;
+  text-align: center;
+  line-height: 150%;
+  letter-spacing: 2px;
+  color: var(--blue-color);
+}
+
+.upload h1 span {
+  color: var(--primary-color);
+}
+
+.f_u {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.f_u p {
+  color: white;
+}
+
+.f_u button {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1rem 1.6rem;
+  background-color: var(--primary-color);
+  font-size: 2rem;
+  border: none;
+  border-radius: 1rem;
+  color: white;
+  cursor: pointer;
+}
+
+.f_u button:hover {
+  background-color: var(--primary-color-01);
+}
+
+.kfs {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.kfs h2 {
+  font-size: 2rem;
+  color: var(--blue-color);
+  margin-bottom: 2rem;
+}
+
+.kfs_item {
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+.kfs_item svg {
+  color: var(--blue-color);
+  font-size: 2rem;
+}
+
+.kfs_down {
+  margin-left: 2rem;
+}
+
+.kfs_img {
+  width: 20rem;
+}
+
+.kfs_img img {
+  width: 80%;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+}
+
+.item span {
+  padding-left: 1rem;
+  color: white;
+  font-size: 1.6rem;
+}
