@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 import { PieChart, Pie, Cell } from "recharts";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Button from "../ui/Button";
 import { MdArrowForward } from "react-icons/md";
 import Row from "./../ui/Row";
@@ -193,12 +193,13 @@ const StyButton = styled.button`
   cursor: pointer;
 `;
 
-const dataColors = ["#4dd3c8", "#f65a9c", "#ffde05"];
+const dataColors = ["#f65a9c", "#4dd3c8", "#ffde05"];
 
 function Calculator() {
   const [loanAmount, setLoanAmount] = useState(80000);
   const [interestRate, setInterestRate] = useState(18);
   const [loanTenure, setLoanTenure] = useState(4);
+  const [totalLoanCost, setTotalLoanCost] = useState(0);
   // const [payableAmount, setPayableAmount] = useState(100);
 
   const monthlyInterest = interestRate / 100 / 12;
@@ -207,7 +208,10 @@ function Calculator() {
     (Math.pow(1 + monthlyInterest, loanTenure) - 1);
 
   const totalInterest = parseInt(EMI * loanTenure - loanAmount, 10);
-  const totalLoanCost = parseInt(loanAmount + totalInterest, 10);
+  // const totalLoanCost = parseInt(loanAmount + totalInterest, 10);
+  useEffect(() => {
+    setTotalLoanCost(parseInt(loanAmount + totalInterest, 10));
+  }, [loanAmount, totalInterest]);
 
   const pieData = [
     { name: "Interest", value: totalInterest },
