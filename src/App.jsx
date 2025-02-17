@@ -9,6 +9,7 @@ import LoanEligibility from "./pages/LoanEligibility";
 import Disbursal from "./pages/Disbursal";
 import { useState } from "react";
 import StartingVideo from "./components/StartingVideo";
+import Repayment from "./pages/Repayment";
 
 function App() {
   const [showIntro, setShowIntro] = useState(true);
@@ -60,6 +61,7 @@ function App() {
               <Route path="verify-otp" element={<Otp />} />
               <Route path="loan-eligibility" element={<LoanEligibility />} />
               <Route path="disbursal" element={<Disbursal />} />
+              <Route path="repayment" element={<Repayment />} />
             </Route>
           </Routes>
           <BackgroundMusic />

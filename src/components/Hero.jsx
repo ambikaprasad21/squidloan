@@ -36,6 +36,7 @@ const Para = styled.p`
 
 function Hero() {
   const navigate = useNavigate();
+  const [hovered, setHovered] = useState(false);
 
   return (
     <>
@@ -104,10 +105,28 @@ function Hero() {
             </div>
           </div>
 
-          <div className="mx-auto  relative overflow-hidden mr-10">
-            <img className="w-full" src="./images/People1.png" />
-            {/* <BackgroundMusic /> */}
-            {/* <img className="w-[470px] h-[470px] left-[-14px] top-[20px] " src="./images/People1.png" /> */}
+          <div
+            className="relative w-[470px] h-[470px] mx-auto overflow-hidden cursor-pointer"
+            onMouseEnter={() => setHovered(true)}
+            onMouseLeave={() => setHovered(false)}
+          >
+            {/* Default Image */}
+            <img
+              className={`absolute inset-0 w-full h-full transition-opacity duration-500 ${
+                hovered ? "opacity-100" : "opacity-0"
+              }`}
+              src="./images/People1.png"
+              alt="People 1"
+            />
+
+            {/* Hover Image */}
+            <img
+              className={`absolute inset-0 w-full h-full transition-opacity duration-500 ${
+                hovered ? "opacity-0" : "opacity-100"
+              }`}
+              src="./images/People2.png"
+              alt="People 2"
+            />
           </div>
         </div>
 

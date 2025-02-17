@@ -2,17 +2,9 @@ import Steps from "./Steps";
 
 const CardSteps = () => {
   return (
-    <div
-      className="flex flex-col w-[1240px] h-[557px] rounded-lg border border-white/0 backdrop-blur-3xl mx-auto items-center justify-center gap-30"
-      style={{ background: "linear-gradient(to right, #1F343B, #492F3F)" }}
-    >
+    <div className="flex flex-col items-center gap-15 justify-center py-[20rem] rounded-[1rem] border border-white/0 bg-gradient-to-r from-[#1F343B] to-[#492F3F]">
       <div className="text-center flex gap-3 mx-auto mt-10">
-        <h1
-          className="text-5xl font-medium font-['Poppins'] text-transparent bg-clip-text"
-          style={{
-            backgroundImage: "linear-gradient(to right, #00ECFF, #F65A9C 60%)",
-          }}
-        >
+        <h1 className="text-5xl font-medium font-['Poppins'] text-transparent bg-clip-text bg-gradient-to-r from-[#00ECFF] to-[#F65A9C]">
           Instant Loan in
         </h1>
         <h1 className="text-[#00ecff] text-5xl font-bold font-['Poppins']">

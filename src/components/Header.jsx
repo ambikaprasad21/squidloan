@@ -10,9 +10,13 @@ function Header() {
         <img src="./images/logo-01.png" alt="logo" />
       </Link>
       <div className={styles.links}>
-        <NavLink>About us</NavLink>
-        <NavLink>Contact us</NavLink>
-        <NavLink className={styles.btn} to={"/login"}>
+        <NavLink>
+          <span>A</span>bout us
+        </NavLink>
+        <NavLink>
+          <span>C</span>ontact us
+        </NavLink>
+        <NavLink className={styles.btn} to={"/repayment"}>
           Repayment
         </NavLink>
       </div>
