@@ -30,6 +30,7 @@ const Soldier = styled.div`
 
 const Heading = styled.h1`
   color: #ff459b;
+  font-size: 2rem;
   display: flex;
   gap: 1rem;
 `;
@@ -54,17 +55,20 @@ const LabelInput = styled.div`
 
 const Label = styled.label`
   color: #00ecff;
+  font-size: 1.6rem;
   span {
     color: red;
   }
 `;
 
 const Input = styled.input`
-  padding: 1rem 1.4rem;
+  font-size: 1.6rem;
+  padding: 10px 15px;
   border: 1px solid #00ecff;
   border-radius: 1rem;
   cursor: pointer;
   outline: none;
+  background-color: white;
   &:focus {
     outline: none;
     border-color: #ff459b;
@@ -72,7 +76,9 @@ const Input = styled.input`
 `;
 
 const MoInput = styled.input`
-  padding: 1rem 1.4rem;
+  font-size: 1.6rem;
+  padding: 7px 15px;
+  background-color: white;
   border: 1px solid #00ecff;
   border-radius: 0 1rem 1rem 0;
   cursor: pointer;
@@ -86,14 +92,17 @@ const MoInput = styled.input`
 `;
 
 const MoCode = styled.span`
-  padding: 1.25rem 1.4rem;
+  font-size: 1.6rem;
+  padding: 7px 15px;
+  border: 1px solid transparent;
   border-radius: 1rem 0 0 1rem;
   background-color: #ededed;
 `;
 
 const Mobile = styled.div`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: center;
 `;
 
 const Checkbox = styled.div`
@@ -154,7 +163,6 @@ function Login() {
     setTimeout(() => {
       navigate("/verify-otp");
     }, 5000);
-    // navigate("/verify-otp");
   }
 
   if (isLoading)
@@ -195,7 +203,7 @@ function Login() {
           <Mobile>
             <MoCode>+91</MoCode>
             <MoInput
-              type="number"
+              type="text"
               placeholder="7905194692"
               required
               value={mobile}

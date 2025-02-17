@@ -1,0 +1,55 @@
+.footer {
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: rgb(255, 255, 255, 0.3);
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  margin-top: 5rem;
+}
+
+.logo {
+  width: 15rem;
+}
+
+.logo img {
+  width: 70%;
+}
+
+.f_c {
+}
+
+.f_c h2 {
+  color: var(--blue-color);
+  font-size: 1.4rem;
+  font-size: 600;
+  margin-bottom: 1.6rem;
+}
+
+.item_list {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.item_list p {
+  cursor: pointer;
+}
+
+.item_list p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.social {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.soldier {
+  width: 40rem;
+  display: flex;
+  align-items: center;
+}
+
+.soldier img {
+  width: 40%;
+}

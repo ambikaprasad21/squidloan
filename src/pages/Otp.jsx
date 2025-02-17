@@ -8,6 +8,8 @@ function Otp() {
   const [timer, setTimer] = useState(60);
   const navigate = useNavigate();
 
+  function handleResendOTP() {}
+
   useEffect(() => {
     if (timer > 0) {
       const countdown = setInterval(() => {
@@ -76,11 +78,13 @@ function Otp() {
               />
             ))}
           </div>
-          <div className={styles.timer}>
-            <p>{formatTime(timer)}</p>
+          <div className={styles.r_t}>
+            <p onClick={handleResendOTP}>Resend OTP</p>
+            <div className={styles.timer}>
+              <p>{formatTime(timer)}</p>
+            </div>
           </div>
         </div>
-
         <button className={styles.btn}>Verify</button>
       </form>
     </div>

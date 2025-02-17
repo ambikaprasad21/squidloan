@@ -34,6 +34,7 @@
   border: none;
   padding: 1rem 1.6rem;
   cursor: pointer;
+  font-size: 1.6rem;
 }
 
 .g_u button:hover {

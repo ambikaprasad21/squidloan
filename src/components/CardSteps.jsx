@@ -11,7 +11,7 @@ const CardSteps = () => {
           5 Minutes
         </h1>
       </div>
-      <Steps />s
+      <Steps />
     </div>
   );
 };
